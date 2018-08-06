@@ -6,6 +6,7 @@
     name: firewalld
     state: started
     enabled: yes
+  tags: firewalld
 
 - name: add http service for firewalld
   firewalld:
@@ -14,6 +15,7 @@
     immediate: true
     permanent: true
     state: enabled
+  tags: firewalld
 
 - name: add https service for firewalld
   firewalld:
@@ -22,3 +24,4 @@
     immediate: true
     permanent: true
     state: enabled
+  tags: firewalld
