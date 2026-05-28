@@ -5,7 +5,7 @@
   service:
     name: firewalld
     state: started
-    enabled: yes
+    enabled: true
   tags: firewalld
 
 - name: add http service for firewalld
